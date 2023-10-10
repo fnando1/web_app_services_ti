@@ -12,20 +12,26 @@
             <h1>Faça login</h1>
             <h1>Começe a dar suporte agora!</h1>
         </div>
-        <div class="rith-login">
-            <div class="card-login">
-                <h1>login</h1>
-                <div class="textfild">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário"></input>
+        <form action="processa.php" method="POST">
+            <div class="rith-login">
+                <div class="card-login">
+                    <h1>login</h1>
+                    <div class="textfild">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário"></input>
+                    </div>
+                    <div class="textfild">
+                        <label for="email">E-mail</label>
+                        <input type="password" name="senha" placeholder="E-mail"></input>
+                    </div>
+                    <div class="textfild">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha"></input>
+                    </div>
+                    <button class="btn-login">Login</button>
                 </div>
-                <div class="textfild">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha"></input>
-                </div>
-                <button class="btn-login">Login</button>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>

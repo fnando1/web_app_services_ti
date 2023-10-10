@@ -13,7 +13,8 @@ CREATE TABLE servico_tecnico_adm (
 -- Table for clients
 CREATE TABLE cliente (
     codigo int PRIMARY KEY,
-    nome varchar(255),       -- Specify a length for varchar
+    nome varchar(255),
+    senha varchar(50),       -- Specify a length for varchar
     telefone bigint,
     e_mail varchar(255)      -- Specify a length for varchar
 );
