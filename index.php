@@ -11,6 +11,7 @@
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
+                <li><a href="login.php">Criar Conta</a></li>
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Sobre Nós</a></li>
                 <li><a href="#">Contato</a></li>
