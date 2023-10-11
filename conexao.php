@@ -3,7 +3,7 @@
 	$servidor = "localhost";
 	$usuario = "root";
 	$senha = "";
-	$db_name = "bd_web_app_services_ti";
+	$db_name = "bd_serviceti";
 
 
 	try{
