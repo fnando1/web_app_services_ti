@@ -15,7 +15,7 @@ $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 //echo "Telefone: $telefone <br>";
 //echo "Senha: $senha <br>";
 
-$result_cliente = "INSERT INTO cliente (nome, senha, telefone, e_mail) VALUES ('$nome','$senha', '$telefone', '$e_mail')";
+$result_cliente = "INSERT INTO cliente (nome, senha, telefone, email) VALUES ('$nome','$senha', '$telefone', '$email')";
  
 $resultado_cliente = mysqli_query($conn, $result_cliente);
 
