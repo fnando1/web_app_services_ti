@@ -28,6 +28,9 @@
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha"></input>
                     </div>
+                    <div class="link-cadastro">
+                        <a href="cadastro_cliente.php">Criar conta.</a>
+                    </div>
                     <button class="btn-login">Login</button>
                 </div>
             </div>
