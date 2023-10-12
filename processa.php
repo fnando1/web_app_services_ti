@@ -19,6 +19,15 @@ $result_cliente = "INSERT INTO cliente (nome, senha, telefone, email) VALUES ('$
  
 $resultado_cliente = mysqli_query($conn, $result_cliente);
 
+//confirmação de cadastro
+if(mysqli_insert_id($conn)){
+    $_SESSION['msg'] = "<p style='color:#ffffff;'>Usuário Cadastrado.";
+    header("Location: login.php");
+}else{
+    $_SESSION['msg'] = "<p style='color:#ffffff;'>Usuário Não Cadastrado!";
+    header("Location: login.php");
+}
+
 
 //Fim de processando dados de cadastro
 

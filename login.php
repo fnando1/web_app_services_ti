@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,6 +35,13 @@
                     </div>
                     <div class="link-cadastro">
                         <a href="cadastro_cliente.php">Criar conta.</a>
+                    </div>
+                    <div class="confirm_cadastro">
+                    <?php
+                    if(isset($_SESSION['msg']))
+                        echo $_SESSION['msg'];
+                        unset($_SESSION['msg']);
+                    ?>
                     </div>
                     <button class="btn-login">Login</button>
                 </div>

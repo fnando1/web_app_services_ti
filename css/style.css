@@ -204,3 +204,7 @@ button[type="submit"]:hover{
     background-color: red;
     
 }
+
+.confirm_cadastro{
+    color: #fff;
+}
