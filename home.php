@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+require_once('valida_login.php');
+
+valida('login.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

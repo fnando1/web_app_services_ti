@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +19,9 @@ session_start();
             <h1>Faça login</h1>
             <h1>Começe a dar suporte agora!</h1>
         </div>
+
+       
+
         <form action="processa.php" method="POST">
             <div class="rith-login">
                 <div class="card-login">
@@ -27,7 +32,7 @@ session_start();
                     </div>
                     <div class="textfild">
                         <label for="email">E-mail</label>
-                        <input type="password" name="senha" placeholder="E-mail"></input>
+                        <input type="text" name="email" placeholder="E-mail"></input>
                     </div>
                     <div class="textfild">
                         <label for="senha">Senha</label>

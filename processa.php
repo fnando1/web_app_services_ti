@@ -31,6 +31,13 @@ if(mysqli_insert_id($conn)){
 
 //Fim de processando dados de cadastro
 
+//Começo autenticação de usuário
 
+$sql = 'SELECT * FROM cliente WHERE nome=:nome AND email=:email AND senha=:senha';
+$result = $conn -> prepare($sql);
+$result -> execute(['nome'=> $nome, 'email'=>$email, 'senha'=>$senha]);
+$user = $result -> fetch();
+
+var_dump($user);
 
 ?>

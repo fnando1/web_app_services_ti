@@ -1,4 +1,4 @@
-/* iNICIO DA TELA PRIUMCIPAL*/
+/* iNICIO DA TELA PRINCIPAL*/
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -11,9 +11,11 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #30374f;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
@@ -30,6 +32,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+nav ul li a:hover{
+    color: rgb(66, 137, 203);
+}
+
 
 .hero {
     text-align: center;
@@ -132,6 +139,68 @@ footer {
     font-weight: 800;
     margin: 0;
 }
+
+.elementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.textfild{
+    width: 17rem;
+    color:rgb(66, 137, 203);
+}
+
+.textfild input{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+}
+
+hr{
+    width: 100%;
+}
+
+.link-cadastro{
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.link-cadastro label{
+    color: white;
+
+}
+.link-cadastro a{
+    color: rgb(66, 137, 203);
+    text-decoration: none;
+}
+
+.btn-login{
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.btn-login button{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    color: white;
+    background-color: rgb(66, 137, 203);
+}
+
+.btn-login button:hover{
+    background-color: rgb(51, 122, 188);
+}
+
 /*FINAL LOGIN*/
 
 /*COMEÇO FORM CLIENTE*/
@@ -198,11 +267,6 @@ button[type="submit"]{
 
 button[type="submit"]:hover{
     background-color: rgb(157, 234, 255);
-}
-
-.link-cadastro{
-    background-color: red;
-    
 }
 
 .confirm_cadastro{
