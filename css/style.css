@@ -82,13 +82,6 @@ h2{
     max-width: 100%;
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
 /*FINAL DA TELA PRINCIPAL*/
 
 /*INICIO LOGIN*/
@@ -147,7 +140,7 @@ footer {
     gap: 10px;
 }
 
-.textfild{
+.textfild {
     width: 17rem;
     color:rgb(66, 137, 203);
 }
@@ -212,7 +205,7 @@ hr{
     height: 100vh;
 }
 
-.container{
+.container-cadastro-cliente{
     
     background-color: #30374f;
     padding: 2rem;
@@ -227,7 +220,7 @@ h1{
     color: aliceblue;
 }
 
-.container form{
+.container-cadastro-cliente form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -271,4 +264,18 @@ button[type="submit"]:hover{
 
 .confirm_cadastro{
     color: #fff;
+}
+
+/*Final FORM CLIENTE*/
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #30374f;
+    color: #fff;
+    padding: 50px 0;
 }

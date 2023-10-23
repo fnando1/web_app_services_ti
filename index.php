@@ -1,33 +1,10 @@
 <?php
 
-session_start();
-
-require_once('valida_login.php');
-
-valida('login.php');
-
+    include_once("templates/header.php");
+    
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home - loja</title>
-</head>
-<body>
-<header>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="login.php">Fazer login</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+
 
     <section class="hero">
         <h1>Contrate ou Ofereça um Serviço</h1>
@@ -42,7 +19,7 @@ valida('login.php');
             <img src="img/manutencao.png" alt="Serviço 1">
             <h3>Linpeza Preventiva</h3>
             <p>Faço limpeza do pc e formatação com backup.</p><br>
-            <a href="#" class="btn">Contratar</a>
+            <a href="<?= $BASE_URL ?>contratar_servico.php" class="btn">Contratar</a>
         </div>
 
         <div class="service">
@@ -60,8 +37,12 @@ valida('login.php');
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Loja de Serviços de T.I.</p>
-    </footer>
+
+<?php
+
+    include_once("templates/footer.php");
+
+?>
+
 </body>
 </html>
